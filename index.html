@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/browser_icon.ico" type="image/x-icon">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Waxom</title>
+  </head>
+<body>
+  <div class="slider col-auto" id="headfon">
+    <header>
+      <div class="row justify-content-around">
+        <div class="col-auto"></div>
+        <div class="col-auto log">
+          <img class="img-fluid waxlogo" src="resources/logos.png" alt="Waxom">
+          Waxom
+        </div>
+        <div class="col-auto">
+        </div>
+        <nav class="row nav0 nomargin">
+          <div class="col-auto">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Features</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">Shortcodes</a>
+            <a href="#">Contact</a>
+          </div>
+          <!-- Card holder  -->
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="row justify-content-between holderline">
+                  <h1><b>Cart</b></h1>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button >
+                </div>
+                <div class="chwindow">
+                  <div class="cardblock">
+                    <div class="col-auto align-self-center">
+                      <h2>Credit cards</h2>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="CardExampleRadios1" value="option1" checked>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios1">
+                          <img class="payicon" src="resources/payicon/2.png" alt="MasterCards">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios1">
+                          **** **** **** 1270
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="CardExampleRadios2" value="option2">
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios2">
+                          <img class="payicon" src="resources/payicon/1.png" alt="Visa">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios2">
+                          **** **** **** 3266
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="CardExampleRadios3" value="option3">
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios3">
+                          <img class="payicon" src="resources/payicon/3.png" alt="Maestro">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios3">
+                          **** **** **** 4780
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="CardExampleRadios4" value="option4">
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios4">
+                          <img class="payicon" src="resources/payicon/5.png" alt="PayPal">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="CardExampleRadios4">
+                          mypaypal@mail.com
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardblock">
+                    <div class="col-auto align-self-center">
+                      <h2>Coupons</h2>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option1" checked>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="exampleRadios2">
+                          <img class="couponicon" src="resources/payicon/Logo-coupons.png" alt="Cupons">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="exampleRadios2">
+                          Sale 10%
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios2" id="PayExampleRadios3" value="option2">
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="PayExampleRadios3">
+                          <img class="couponicon" src="resources/payicon/hot-coupons.png" alt="Cupons">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="row" for="PayExampleRadios3">
+                          Sale 30%
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardblock">
+                    <div class="col-auto align-self-center">
+                      <h2>Products</h2>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="form-check-label" for="inlineCheckbox1">
+                          <img class="bayicon" src="resources/payicon/Lending-1.png" alt="Cupons">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="form-check-label" for="inlineCheckbox1">
+                          800$
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row pay" onclick="">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="form-check-label" for="inlineCheckbox2">
+                          <img class="bayicon" src="resources/payicon/Lending-1.png" alt="Cupons">
+                        </label>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <label class="form-check-label" for="inlineCheckbox2">
+                          1100$
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end holderbuttom">
+                    <div class="col-auto">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    <div class="col-auto">
+                      <button type="button" class="btn btn-primary">Pay</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto cards cartholder" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <svg class="carticon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="24" viewBox="0 0 18 24">
+              <path id="icon-cart" class="cls-1" d="M1491,58h-1.5c0-1.657-2.02-3-4.5-3s-4.5,1.344-4.5,3H1479a3,3,0,0,0-3,3V76a3,3,0,0,0,3,3h12a3,3,0,0,0,2.99-3V61A3,3,0,0,0,1491,58Zm-6-1.5c1.66,0,3,.464,3,1.5h-6C1482,56.962,1483.34,56.5,1485,56.5Zm7.49,19.5a1.5,1.5,0,0,1-1.49,1.5h-12a1.5,1.5,0,0,1-1.5-1.5V74.5h14.99V76Zm0-3H1477.5V61a1.5,1.5,0,0,1,1.5-1.5h1.5V64h1.5V59.5h6V64h1.5V59.5h1.5a1.5,1.5,0,0,1,1.49,1.5V73Z" transform="translate(-1476 -55)"/></svg>
+          </div>
+          <div class="row nomargin">
+            <div class="col-auto cards searching">
+              <svg id="idss" class="search" onclick="ShowHideContent(document.getElementById('ids3'),document.getElementById('idss'))" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                <path id="icon-search" class="cls-1" d="M1545.76,77.682l-6.19-6.095a9.807,9.807,0,0,0,2.62-6.658,10.1,10.1,0,1,0-10.1,9.934,10.183,10.183,0,0,0,6.36-2.218l6.21,6.12a0.788,0.788,0,0,0,1.1,0A0.763,0.763,0,0,0,1545.76,77.682Zm-13.67-4.348a8.406,8.406,0,1,1,8.54-8.405A8.477,8.477,0,0,1,1532.09,73.334Z" transform="translate(-1522 -55)"/></svg>
+            </div>
+            <input id="ids3" style="display: none;" type="search" name="Search" value="" class="col-auto searchinp">
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Carusel -->
+    <aside id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+      <div class="carusel-buttoms">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="carousel-inner">
+        <div id="backgroundOne" class="col-auto active carousel-item carousel" onchange="fonheader();">
+          Unique and Modern Design
+          <h1><b>Portfolio PSD Template</b></h1>
+          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+          <button class="butt" type="button" name="button"><b>GET STARTED</b></button>
+        </div>
+        <div id="backgroundTwo" class="col-auto carousel-item carousel" onchange="fonheader();">
+          Unique and Modern Design
+          <h1><b>Portfolio PSD Template</b></h1>
+          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+          <button class="butt" type="button" name="button"><b>GET STARTED</b></button>
+        </div>
+        <div id="backgroundThree" class="col-auto carousel-item carousel" onchange="fonheader();">
+          Unique and Modern Design
+          <h1><b>Portfolio PSD Template</b></h1>
+          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+          <button class="butt" type="button" name="button"><b>GET STARTED</b></button>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+    </aside>
+    <!-- Background change witch carusel  -->
+    <script>
+      $(document).ready(function(){
+        // Activate Carousel
+        $("#carouselExampleIndicators").on('slid.bs.carousel',
+        // Background change witch carusel
+        function fonheader(){
+          if (document.getElementById("backgroundOne").classList.contains("active")) {
+              document.getElementById("headfon").style.backgroundImage = "url(resources/background.png)";
+          }
+        	if (document.getElementById("backgroundThree").classList.contains("active")) {
+        			document.getElementById("headfon").style.backgroundImage = "url(resources/background3.jpg)";
+        	}
+          if (document.getElementById("backgroundTwo").classList.contains("active")) {
+              document.getElementById("headfon").style.backgroundImage = "url(resources/background2.jpg)";
+          }
+        });
+      });
+    </script>
+  </div>
+<!-- Notes modul navigation -->
+  <nav class="row justify-content-center workspace">
+    <div class="col-auto align-self-center wblock1">
+      <a href="#">
+        <svg class="wicon1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.594" height="47.59" viewBox="0 0 47.594 47.59">
+          <path class="cls-1" d="M534.668,1121.47a1.591,1.591,0,0,0-2.248,0l-13.847,13.84-19.467,8.58-3-3,8.576-19.47,13.844-13.84a1.59,1.59,0,1,0-2.248-2.25l-14.268,14.26-14.477,32.87,32.868-14.47,14.266-14.27A1.592,1.592,0,0,0,534.668,1121.47Zm-20.173,11a1.606,1.606,0,0,0,2.25,0l13.332-13.34a1.591,1.591,0,0,0-2.25-2.25L514.5,1130.22A1.593,1.593,0,0,0,514.5,1132.47Zm-3.48-3.48a1.606,1.606,0,0,0,2.25,0l13.333-13.34a1.591,1.591,0,0,0-2.25-2.25l-13.333,13.33A1.6,1.6,0,0,0,511.015,1128.99Zm-3.481-3.49a1.581,1.581,0,0,0,2.25,0l13.333-13.33a1.591,1.591,0,0,0-2.25-2.25l-13.333,13.33A1.593,1.593,0,0,0,507.534,1125.5Z" transform="translate(-487.531 -1104.88)"/>
+        </svg>
+        <h2>Web & App Design</h2>
+        Nam liber tempor cum soluta nobis eleifend <br>
+        option congue nihil imperdiet <br>
+        doming id quod mazim.
+        <div class="row justify-content-center nomargin">
+          <div class="wline1"></div>
+        </div>
+      </a>
+    </div>
+    <div class="col-auto align-self-center wblock2">
+      <a href="#">
+        <svg class="wicon2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.875" height="39.19" viewBox="0 0 42.875 39.19">
+          <path class="cls-1" d="M811.851,1113.11l-21.437,11.56,21.437,11.56,21.436-11.56Zm0,26.85-17.452-9.41-3.985,2.15,21.437,11.55,21.436-11.55-3.985-2.15Zm0,8.02-17.452-9.41-3.985,2.15,21.437,11.56,21.436-11.56-3.985-2.15Z" transform="translate(-790.406 -1113.09)"/>
+        </svg>
+        <h2>Development</h2>
+        Lorem ipsum dolor sit amet, adipiscing <br>
+        elit, sed diam nonummy nibh euismod <br>
+        tincidunt ut laoreet.
+        <div class="row justify-content-center nomargin">
+          <div class="wline2"></div>
+        </div>
+      </a>
+    </div>
+    <div class="col-auto align-self-center wblock3">
+      <a href="#">
+        <svg class="wicon3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.508" height="48.52" viewBox="0 0 43.56 43.57">
+          <path class="cls-1" d="M1132.93,1129.85a4.327,4.327,0,0,0-2.61-3.86,4.623,4.623,0,0,1-2.88-6.97,4.161,4.161,0,0,0-5.46-5.46,6.019,6.019,0,0,1-4.23.35,5.937,5.937,0,0,1-2.74-3.24,4.173,4.173,0,0,0-7.73,0,4.634,4.634,0,0,1-6.97,2.89,4.161,4.161,0,0,0-5.46,5.46,4.636,4.636,0,0,1-2.88,6.97,4.159,4.159,0,0,0,0,7.72,4.623,4.623,0,0,1,2.88,6.97,4.161,4.161,0,0,0,5.46,5.46,4.634,4.634,0,0,1,6.97,2.89,4.173,4.173,0,0,0,7.73,0,4.628,4.628,0,0,1,6.97-2.89,4.161,4.161,0,0,0,5.46-5.46,4.623,4.623,0,0,1,2.88-6.97A4.327,4.327,0,0,0,1132.93,1129.85Zm-21.79,7.99a7.985,7.985,0,1,1,7.99-7.98A7.979,7.979,0,0,1,1111.14,1137.84Z" transform="translate(-1089.38 -1108.06)"/>
+        </svg>
+        <h2>Customization</h2>
+        Nam liber tempor cum soluta nobis <br>
+        eleifend option congue nihil imperdiet <br>
+        doming id quod mazim.
+        <div class="row justify-content-center nomargin">
+          <div class="wline3"></div>
+        </div>
+      </a>
+    </div>
+    <div class="col-auto align-self-center wblock4">
+      <a href="#">
+        <svg class="wicon4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.253" height="48.496" viewBox="0 0 50.88 35.63">
+          <path class="cls-1" d="M1397,1129.25a6.787,6.787,0,0,1,5.74-3.61h26.21v-1.66a2.482,2.482,0,0,0-2.46-2.48h-10.82v-1.44a3.707,3.707,0,0,0-3.68-3.73h-6.29a3.722,3.722,0,0,0-3.69,3.73v1.44H1391.2a2.475,2.475,0,0,0-2.46,2.48v22.17Zm7.47-9.19a1.266,1.266,0,0,1,.36-0.88,1.185,1.185,0,0,1,.87-0.36h6.29a1.231,1.231,0,0,1,1.23,1.24v1.44h-8.75v-1.44Zm25.45,29.7a4.319,4.319,0,0,1-3.54,2.22h-35.3a1.417,1.417,0,0,1-1.37-2.22l9.49-19.42a4.333,4.333,0,0,1,3.54-2.22h35.3a1.417,1.417,0,0,1,1.37,2.22Z" transform="translate(-1388.75 -1116.34)"/>
+        </svg>
+        <h2>Marketing</h2>
+        Nam liber tempor cum soluta nobis eleifend <br>
+        option congue nihil imperdiet <br>
+        doming id quod mazim.
+        <div class="row justify-content-center nomargin">
+          <div class="wline4"></div>
+        </div>
+      </a>
+    </div>
+  </nav>
+  <!-- Next section  -->
+  <section class="row justify-content-center info">
+    <div class="col-auto align-self-center">
+      <h2>Waxom is Realization of your Ideas.</h2>
+      Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br>
+      processus dynamicus, qui sequitur mutationem consuetudium.
+    </div>
+    <div class="col-auto align-self-center logInfo">
+      <img class="img-fluid" src="resources/infologo.png" alt="Info">
+    </div>
+  </section>
+  <!-- line one  -->
+  <aside id="line1" class="row justify-content-around line">
+    <div class="linetxt col-auto align-self-center">
+      <h1><em>Waxom</em> Multipurpose WordPress Theme</h1>
+      Don't Forget to Rate the Template. Thanks so much!
+    </div>
+    <div class="col-auto align-self-center">
+    <button class="butt" type="button" name="button"><b>PURCHASE NOW</b></button>
+    </div>
+  </aside>
+  <!--Projectsect navigate  -->
+  <section class="proj">
+    <div class="row justify-content-around tproj">
+      <div class="col-auto align-self-center">
+        <h1><b>Our Latest Projects.</b></h1>
+        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br>
+        processus dynamicus, qui sequitur mutationem consuetudium.
+      </div>
+    </div>
+    <nav>
+      <ul class="row justify-content-center nav nav-pills mb-5 nav2" id="pills-tab" role="tablist">
+        <li class="col-auto align-self-center nav-item">
+          <a class="nav-link active" id="pills-home-tab1" data-toggle="pill" href="#pills-1" role="tab" aria-selected="true">All</a>
+        </li>
+        <li class="col-auto align-self-center nav-item">
+          <a class="nav-link" id="pills-profile-tab2" data-toggle="pill" href="#pills-2" role="tab" aria-selected="false">Web design</a>
+        </li>
+        <li class="col-auto align-self-center nav-item">
+          <a class="nav-link" id="pills-contact-tab3" data-toggle="pill" href="#pills-3" role="tab" aria-selected="false">Mobile App</a>
+        </li>
+        <li class="col-auto align-self-center nav-item">
+          <a class="nav-link" id="pills-contact-tab4" data-toggle="pill" href="#pills-4" role="tab" aria-selected="false">Illustration</a>
+        </li>
+        <li class="col-auto align-self-center nav-item">
+          <a class="nav-link" id="pills-contact-tab5" data-toggle="pill" href="#pills-5" role="tab" aria-selected="false">Photography</a>
+        </li>
+      </ul>
+      <!-- Блок текста  -->
+      <div class="tab-content" id="pills-tabContent">
+        <!-- One  -->
+        <div class="tab-pane fade show active" id="pills-1" role="tabpanel">
+          <div class="row justify-content-center navtable">
+            <div class="col-auto align-self-center navimg navimg1">
+              <div class="col-auto brown">
+                <div class="row justify-content-center nav2imgpanel1">
+                  <a href="resources/Project01.png"><img class="col-auto img-fluid link1" src="resources/link.png" alt="link1"></a>
+                  <img onclick="zoom(document.getElementById('zoom1'));" class="col-auto img-fluid lupa1" src="resources/lupa.png" alt="lupa1">
+                </div>
+                <img onclick="zoomoff(document.getElementById('zoom1'));" id="zoom1" class="img-fluid imgbrown1" src="resources/Project01.png" alt="01">
+              </div>
+              <div class="col-auto imgtextblock1">
+                <div class="ugol"></div>
+                <h2>Claritas Etiam Processus</h2>
+                Photography, Nature
+              </div>
+            </div>
+            <div class="col-auto align-self-center navimg navimg2">
+              <div class="col-auto brown">
+                <div class="row justify-content-center nav2imgpanel2">
+                  <a href="resources/Project02.png"><img class="col-auto img-fluid link2" src="resources/link.png" alt="link2"></a>
+                  <img onclick="zoom(document.getElementById('zoom2'))" class="col-auto img-fluid lupa2" src="resources/lupa.png" alt="lupa2">
+                </div>
+                <img onclick="zoomoff(document.getElementById('zoom2'));" id="zoom2" class="img-fluid imgbrown2" src="resources/Project02.png" alt="02">
+              </div>
+              <div class="col-auto imgtextblock2 imgtextblockbrown2">
+                <div class="ugol ugolbrown2"></div>
+                <h2>Quam Nutamus Farum</h2>
+                Graphic Design, Mock-Up
+              </div>
+            </div>
+            <div class="col-auto align-self-center navimg navimg3">
+              <div class="col-auto brown">
+                <div class="row justify-content-center nav2imgpanel3">
+                  <a href="resources/Project03.png"><img class="col-auto img-fluid link3" src="resources/link.png" alt="link3"></a>
+                  <img onclick="zoom(document.getElementById('zoom3'));" class="col-auto img-fluid lupa3" src="resources/lupa.png" alt="lupa3">
+                </div>
+                <img onclick="zoomoff(document.getElementById('zoom3'));" id="zoom3" class="img-fluid imgbrown3" src="resources/Project03.png" alt="03">
+              </div>
+              <div class="col-auto imgtextblock3">
+                <div class="ugol"></div>
+                <h2>Usus Legentis Videntur</h2>
+                Photography, Holiday
+              </div>
+            </div>
+            <div class="w-100 snos"></div>
+            <div class="col-auto align-self-center navimg navimg4">
+              <div class="col-auto brown">
+                <div class="row justify-content-center nav2imgpanel4">
+                  <a href="resources/Project04.png"><img class="col-auto img-fluid link4" src="resources/link.png" alt="link4"></a>
+                  <img onclick="zoom(document.getElementById('zoom4'));" class="col-auto img-fluid lupa4" src="resources/lupa.png" alt="lupa4">
+                </div>
+                <img onclick="zoomoff(document.getElementById('zoom4'));" id="zoom4" class="img-fluid imgbrown4" src="resources/Project04.png" alt="04">
+              </div>
+              <div class="col-auto imgtextblock4">
+                <div class="ugol"></div>
+                <h2>Claritas Etiam Processus</h2>
+                Photography, Nature
+              </div>
+            </div>
+            <div class="col-auto align-self-center navimg navimg5">
+              <div class="col-auto brown">
+                <div class="row justify-content-center nav2imgpanel5">
+                  <a href="resources/Project05.png"><img class="col-auto img-fluid link5" src="resources/link.png" alt="link5"></a>
+                  <img onclick="zoom(document.getElementById('zoom5'));" class="col-auto img-fluid lupa5" src="resources/lupa.png" alt="lupa5">
+                </div>
+                <img onclick="zoomoff(document.getElementById('zoom5'));" id="zoom5" class="img-fluid imgbrown5" src="resources/Project05.png" alt="05">
+              </div>
+              <div class="col-auto imgtextblock5">
+                <div class="ugol"></div>
+                <h2>Quam Nutamus Farum</h2>
+                Graphic Design, Mock-Up
+              </div>
+            </div>
+            <div class="col-auto align-self-center navimg navimg6">
+              <div class="col-auto brown">
+                <div class="row justify-content-center nav2imgpanel6">
+                  <a href="resources/Project06.png"><img class="col-auto img-fluid link6" src="resources/link.png" alt="link6"></a>
+                  <img onclick="zoom(document.getElementById('zoom6'));" class="col-auto img-fluid lupa6" src="resources/lupa.png" alt="lupa6">
+                </div>
+                <img onclick="zoomoff(document.getElementById('zoom6'));" id="zoom6" class="img-fluid imgbrown6" src="resources/Project06.png" alt="06">
+              </div>
+              <div class="col-auto imgtextblock6">
+                <div class="ugol"></div>
+                <h2>Usus Legentis Videntur</h2>
+                Photography, Holiday
+              </div>
+            </div>
+          </div>
+          <div class="row rbutt justify-content-center">
+            <button class="butt" type="button" name="button"><b>LOAD MORE</b></button>
+          </div>
+        </div>
+        <!-- Two  -->
+        <div class="tab-pane fade" id="pills-2" role="tabpanel">
+          <div class="tab-pane fade show active" id="pills-2_2" role="tabpanel">
+            <div class="row justify-content-center navtable">
+              <div class="col-auto align-self-center navimg navimg2">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel2">
+                    <a href="resources/Project02.png"><img class="col-auto img-fluid link2" src="resources/link.png" alt="link2"></a>
+                    <img onclick="zoom(document.getElementById('zoom7'));" class="col-auto img-fluid lupa2" src="resources/lupa.png" alt="lupa2">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom7'));" id="zoom7" class="img-fluid imgbrown2" src="resources/Project02.png" alt="02">
+                </div>
+                <div class="col-auto imgtextblock2 imgtextblockbrown2">
+                  <div class="ugol ugolbrown2"></div>
+                  <h2>Quam Nutamus Farum</h2>
+                  Graphic Design, Mock-Up
+                </div>
+              </div>
+              <div class="col-auto align-self-center navimg navimg5">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel5">
+                    <a href="resources/Project05.png"><img class="col-auto img-fluid link5" src="resources/link.png" alt="link5"></a>
+                    <img onclick="zoom(document.getElementById('zoom8'));" class="col-auto img-fluid lupa5" src="resources/lupa.png" alt="lupa5">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom8'));" id="zoom8" class="img-fluid imgbrown5" src="resources/Project05.png" alt="05">
+                </div>
+                <div class="col-auto imgtextblock5">
+                  <div class="ugol"></div>
+                  <h2>Quam Nutamus Farum</h2>
+                  Graphic Design, Mock-Up
+                </div>
+              </div>
+            </div>
+            <div class="row rbutt justify-content-center">
+              <button class="butt" type="button" name="button"><b>LOAD MORE</b></button>
+            </div>
+          </div>
+        </div>
+        <!-- Three  -->
+        <div class="tab-pane fade" id="pills-3" role="tabpanel">
+          <div class="tab-pane fade show active" id="pills-3_3" role="tabpanel">
+            <div class="row justify-content-center navtable">
+              <div class="col-auto align-self-center navimg navimg2">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel2">
+                    <a href="resources/Project02.png"><img class="col-auto img-fluid link2" src="resources/link.png" alt="link2"></a>
+                    <img onclick="zoom(document.getElementById('zoom9'));" class="col-auto img-fluid lupa2" src="resources/lupa.png" alt="lupa2">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom9'));" id="zoom9" class="img-fluid imgbrown2" src="resources/Project02.png" alt="02">
+                </div>
+                <div class="col-auto imgtextblock2 imgtextblockbrown2">
+                  <div class="ugol ugolbrown2"></div>
+                  <h2>Quam Nutamus Farum</h2>
+                  Graphic Design, Mock-Up
+                </div>
+              </div>
+            </div>
+            <div class="row rbutt justify-content-center">
+              <button class="butt" type="button" name="button"><b>LOAD MORE</b></button>
+            </div>
+          </div>
+        </div>
+        <!-- Four  -->
+        <div class="tab-pane fade" id="pills-4" role="tabpanel">
+          <div class="tab-pane fade show active" id="pills-4_4" role="tabpanel">
+            <div class="row justify-content-center navtable">
+              <div class="col-auto align-self-center navimg navimg2">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel2">
+                    <a href="resources/Project02.png"><img class="col-auto img-fluid link2" src="resources/link.png" alt="link2"></a>
+                    <img onclick="zoom(document.getElementById('zoom10'));" class="col-auto img-fluid lupa2" src="resources/lupa.png" alt="lupa2">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom10'));" id="zoom10" class="img-fluid imgbrown2" src="resources/Project02.png" alt="02">
+                </div>
+                <div class="col-auto imgtextblock2 imgtextblockbrown2">
+                  <div class="ugol ugolbrown2"></div>
+                  <h2>Quam Nutamus Farum</h2>
+                  Graphic Design, Mock-Up
+                </div>
+              </div>
+              <div class="col-auto align-self-center navimg navimg5">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel5">
+                    <a href="resources/Project05.png"><img class="col-auto img-fluid link5" src="resources/link.png" alt="link5"></a>
+                    <img onclick="zoom(document.getElementById('zoom11'));" class="col-auto img-fluid lupa5" src="resources/lupa.png" alt="lupa5">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom11'));" id="zoom11" class="img-fluid imgbrown5" src="resources/Project05.png" alt="05">
+                </div>
+                <div class="col-auto imgtextblock5">
+                  <div class="ugol"></div>
+                  <h2>Quam Nutamus Farum</h2>
+                  Graphic Design, Mock-Up
+                </div>
+              </div>
+            </div>
+            <div class="row rbutt justify-content-center">
+              <button class="butt" type="button" name="button"><b>LOAD MORE</b></button>
+            </div>
+          </div>
+        </div>
+        <!-- five  -->
+        <div class="tab-pane fade" id="pills-5" role="tabpanel">
+          <div class="tab-pane fade show active" id="pills-5_5" role="tabpanel">
+            <div class="row justify-content-center navtable">
+              <div class="col-auto align-self-center navimg navimg1">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel1">
+                    <a href="resources/Project01.png"><img class="col-auto img-fluid link1" src="resources/link.png" alt="link1"></a>
+                    <img onclick="zoom(document.getElementById('zoom12'));" class="col-auto img-fluid lupa1" src="resources/lupa.png" alt="lupa1">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom12'));" id="zoom12" class="img-fluid imgbrown1" src="resources/Project01.png" alt="01">
+                </div>
+                <div class="col-auto imgtextblock1">
+                  <div class="ugol"></div>
+                  <h2>Claritas Etiam Processus</h2>
+                  Photography, Nature
+                </div>
+              </div>
+              <div class="col-auto align-self-center navimg navimg3">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel3">
+                    <a href="resources/Project03.png"><img class="col-auto img-fluid link3" src="resources/link.png" alt="link3"></a>
+                    <img onclick="zoom(document.getElementById('zoom13'));" class="col-auto img-fluid lupa3" src="resources/lupa.png" alt="lupa3">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom13'));" id="zoom13" class="img-fluid imgbrown3" src="resources/Project03.png" alt="03">
+                </div>
+                <div class="col-auto imgtextblock3">
+                  <div class="ugol"></div>
+                  <h2>Usus Legentis Videntur</h2>
+                  Photography, Holiday
+                </div>
+              </div>
+              <div class="col-auto align-self-center navimg navimg4">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel4">
+                    <a href="resources/Project04.png"><img class="col-auto img-fluid link4" src="resources/link.png" alt="link4"></a>
+                    <img onclick="zoom(document.getElementById('zoom14'));" class="col-auto img-fluid lupa4" src="resources/lupa.png" alt="lupa4">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom14'));" id="zoom14" class="img-fluid imgbrown4" src="resources/Project04.png" alt="04">
+                </div>
+                <div class="col-auto imgtextblock4">
+                  <div class="ugol"></div>
+                  <h2>Claritas Etiam Processus</h2>
+                  Photography, Nature
+                </div>
+              </div>
+              <div class="col-auto align-self-center navimg navimg6">
+                <div class="col-auto brown">
+                  <div class="row justify-content-center nav2imgpanel6">
+                    <a href="resources/Project06.png"><img class="col-auto img-fluid link6" src="resources/link.png" alt="link6"></a>
+                    <img onclick="zoom(document.getElementById('zoom15'));" class="col-auto img-fluid lupa6" src="resources/lupa.png" alt="lupa6">
+                  </div>
+                  <img onclick="zoomoff(document.getElementById('zoom15'));" id="zoom15" class="img-fluid imgbrown6" src="resources/Project06.png" alt="06">
+                </div>
+                <div class="col-auto imgtextblock6">
+                  <div class="ugol"></div>
+                  <h2>Usus Legentis Videntur</h2>
+                  Photography, Holiday
+                </div>
+              </div>
+            </div>
+            <div class="row rbutt justify-content-center">
+              <button class="butt" type="button" name="button"><b>LOAD MORE</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- video block  -->
+  <section class="vid2">
+    <video class="col-auto vid" id="videoPlayer" onclick="smotra()" poster="resources/poster.png">
+      <source src="resources/Rompaso.mp4" type='video/mp4'>
+    </video>
+    <div class="row justify-content-center vidbrown" id="vidbrwn" onclick="play()">
+        <div id="play" class="col-auto align-self-end vidcontrol" onclick="play()">
+          <div class="img-fluid playbtn"></div>
+        </div>
+        <div id="pause" class="col-auto align-self-center vidcontrol none" onclick="pause()"></div>
+      <div class="col-auto align-self-start vidtext">
+        <h1>Waxom Video Presentation</h1>
+      Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui <br>
+      sequitur mutationem consuetudium.
+      </div>
+    </div>
+  </section>
+  <!-- Next section  -->
+  <section class="sec5">
+    <div class="row flex-nowrap justify-content-center nomargin">
+      <div class="col-auto align-self-end sec5imgblock">
+        <img class="img-fluid sec5img" src="resources/iPhoneinhand.png" alt="Iphone">
+      </div>
+      <div class="col-auto sec5text">
+        <h1>Excellent for Mobile Devices.</h1>
+        Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores
+        legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis
+        videntur parum clari, fiant sollemnes in futurum.<br><br><br>
+        <!-- shortcut block  -->
+        <div class="row flex-nowrap nomargin">
+          <!-- Arrow -->
+          <div class="col-auto arrow" id="idf1" onclick="newshowhide(document.getElementById('idf1'),document.getElementById('id1'))"></div>
+          <!-- Text block -->
+          <div onclick="newshowhide(document.getElementById('idf1'),document.getElementById('id1'))" class="col-auto arrowtext">
+            Nam liber tempor cum soluta nobis eleifend option;
+            <!-- Display text block -->
+            <div class="col-auto nopadding" id="id1" style="display: none;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+          </div>
+        </div>
+        <div class="row flex-nowrap nomargin">
+          <div class="col-auto arrow" id="idf2" onclick="newshowhide(document.getElementById('idf2'),document.getElementById('id2'))"></div>
+          <div onclick="newshowhide(document.getElementById('idf2'),document.getElementById('id2'))" class="col-auto arrowtext">
+            Option congue nihil imperdiet doming id quod mazim placerat facer;
+            <div class="col-auto nopadding" id="id2" style="display: none;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+          </div>
+        </div>
+        <div class="row flex-nowrap nomargin">
+          <div class="col-auto arrow" id="idf3" onclick="newshowhide(document.getElementById('idf3'),document.getElementById('id3'))"></div>
+          <div onclick="newshowhide(document.getElementById('idf3'),document.getElementById('id3'))" class="col-auto arrowtext">
+            Eodem modo typi, qui nunc nobis videntur parum futurum;
+            <div class="col-auto nopadding" id="id3" style="display: none;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+          </div>
+        </div>
+        <div class="row flex-nowrap nomargin">
+          <div class="col-auto arrow" id="idf4" onclick="newshowhide(document.getElementById('idf4'),document.getElementById('id4'))"></div>
+          <div onclick="newshowhide(document.getElementById('idf4'),document.getElementById('id4'))" class="col-auto arrowtext">
+            Investigationes demonstraverunt lectores
+            <div class="col-auto nopadding" id="id4" style="display: none;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Line 2  -->
+  <aside id="line2" class="row line line2">
+    <div class="col-auto align-self-center punct1">
+      <svg class="iconsvg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+          <path class="cls-1" d="M559.937,4908.25c5.688,0,10.313-5.63,10.313-12.55s-4.625-12.54-10.313-12.54a9.441,9.441,0,0,0-7.394,3.78,14.037,14.037,0,0,0-2.918,8.76C549.625,4902.62,554.25,4908.25,559.937,4908.25Zm0-22.34c4.17,0,7.563,4.39,7.563,9.79s-3.393,9.8-7.563,9.8-7.562-4.39-7.565-9.8S555.765,4885.91,559.937,4885.91Zm8.661,20.96a1.375,1.375,0,1,0,0,2.75,8.541,8.541,0,0,1,8.527,8.53,1.1,1.1,0,0,1-1.1,1.1H543.848a1.1,1.1,0,0,1-1.1-1.1,8.539,8.539,0,0,1,8.524-8.53,1.375,1.375,0,1,0,0-2.75A11.289,11.289,0,0,0,540,4918.15a3.856,3.856,0,0,0,3.848,3.85h32.176a3.857,3.857,0,0,0,3.851-3.85A11.292,11.292,0,0,0,568.6,4906.87Zm-7.655-25.24a6.084,6.084,0,0,1,3.119-.88c4.17,0,7.563,4.4,7.563,9.8a12.42,12.42,0,0,1-.32,2.83,1.379,1.379,0,0,0,1.024,1.65,1.688,1.688,0,0,0,.315.03,1.369,1.369,0,0,0,1.338-1.06,15.2,15.2,0,0,0,.393-3.45c0-6.92-4.625-12.55-10.313-12.55a8.936,8.936,0,0,0-4.518,1.26A1.376,1.376,0,0,0,560.943,4881.63ZM573,4901.37a1.375,1.375,0,1,0,0,2.75,8.386,8.386,0,0,1,8.25,8.62,1.068,1.068,0,0,1-.094.45,1.38,1.38,0,0,0,.7,1.82,1.4,1.4,0,0,0,1.816-.7,3.878,3.878,0,0,0,.33-1.57A11.142,11.142,0,0,0,573,4901.37Z" transform="translate(-540 -4878)"/>
+      </svg>
+      <h1>3587</h1>
+      SATISFIED CLIENTS
+      <div class="line2splash line2_1"></div>
+    </div>
+    <div class="col-auto align-self-center punct2">
+      <svg class="iconsvg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="44" viewBox="0 0 48 44">
+        <path class="cls-1" d="M782.043,4920.75a1.242,1.242,0,0,1-1.234,1.25H737.234a1.25,1.25,0,0,1,0-2.5h43.575A1.242,1.242,0,0,1,782.043,4920.75Zm-24.274-20.54a1.215,1.215,0,0,0,1.744-.06,1.266,1.266,0,0,0-.06-1.77c-2.116-2-1.663-6.07.155-8.37,2.467-3.12,3.01-8.68-.155-11.67a1.219,1.219,0,0,0-1.744.06,1.266,1.266,0,0,0,.06,1.77c1.9,1.79,1.858,5.82-.087,8.28a10.169,10.169,0,0,0-2.1,5.95A7.571,7.571,0,0,0,757.769,4900.21Zm26.231-2.6v2.4a6.205,6.205,0,0,1-6.154,6.24h-2.755a13.513,13.513,0,0,1-12.686,9.05h-6.766a13.579,13.579,0,0,1-13.476-13.66v-12.41a1.242,1.242,0,0,1,1.234-1.25h7.915c1.606-2.48,1.535-6.13-.249-7.81a1.266,1.266,0,0,1-.06-1.77,1.219,1.219,0,0,1,1.744-.06c3.164,2.99,2.621,8.55.155,11.67-1.819,2.3-2.272,6.37-.155,8.37a1.266,1.266,0,0,1,.06,1.77,1.219,1.219,0,0,1-1.744.06,7.571,7.571,0,0,1-2.184-5.81,10.44,10.44,0,0,1,.881-3.92h-5.13v11.16a11.094,11.094,0,0,0,11.009,11.16h6.766a11.093,11.093,0,0,0,11.008-11.16v-11.16h-9.278a1.25,1.25,0,0,1,0-2.5h10.512a1.242,1.242,0,0,1,1.234,1.25v2.15h1.965A6.2,6.2,0,0,1,784,4897.61Zm-2.468,0a3.711,3.711,0,0,0-3.686-3.73h-1.965v9.87h1.965a3.719,3.719,0,0,0,3.686-3.74v-2.4Z" transform="translate(-736 -4878)"/>
+      </svg>
+      <h1>207</h1>
+      CUPS OF COFFEE
+      <div class="line2splash line2_2"></div>
+    </div>
+    <div class="col-auto align-self-center punct3">
+      <svg class="iconsvg3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+        <path class="cls-1" d="M967.873,4901.37H954.126a1.375,1.375,0,1,0,0,2.75h13.747A1.375,1.375,0,1,0,967.873,4901.37Zm2.749-8.24H951.376a1.37,1.37,0,1,0,0,2.74h19.246A1.37,1.37,0,1,0,970.622,4893.13ZM961,4878c-12.147,0-22,8.62-22,19.25a18.431,18.431,0,0,0,8.249,15.01V4922l9.635-5.85a25.236,25.236,0,0,0,4.112.35c12.149,0,22-8.62,22-19.25S973.148,4878,961,4878Zm0,35.75a22.075,22.075,0,0,1-4.646-.51l-6.473,3.89,0.087-6.37c-4.962-2.99-8.214-7.92-8.214-13.51,0-9.11,8.617-16.5,19.246-16.5s19.247,7.39,19.247,16.5S971.629,4913.75,961,4913.75Z" transform="translate(-939 -4878)"/>
+      </svg>
+      <h1>2500</h1>
+      BLOG POSTS
+      <div class="line2splash line2_3"></div>
+    </div>
+    <div class="col-auto align-self-center punct4">
+      <svg class="iconsvg4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+        <path class="cls-1" d="M1169.25,4878c-0.42,0-.85.03-1.27,0.06l-0.46.06c-0.25.03-.51,0.07-0.76,0.12-0.19.03-.38,0.07-0.56,0.11-0.21.05-.42,0.11-0.63,0.16s-0.39.11-.59,0.18a5.442,5.442,0,0,0-.52.19,12.305,12.305,0,0,0-1.34.58,2.1,2.1,0,0,0-.26.13c-0.23.12-.45,0.25-0.68,0.39-0.12.07-.24,0.14-0.36,0.22-0.22.14-.42,0.28-0.63,0.43a2.141,2.141,0,0,1-.19.13,13.74,13.74,0,0,0-22,10.99c0,12.44,8,23.7,21.41,30.11a1.313,1.313,0,0,0,1.18,0c13.41-6.41,21.41-17.67,21.41-30.11A13.768,13.768,0,0,0,1169.25,4878Zm-8.25,41.1c-12.07-5.99-19.25-16.17-19.25-27.35a10.974,10.974,0,0,1,17.19-9.07,13.728,13.728,0,0,0-3.44,9.07,1.375,1.375,0,0,0,2.75,0,11.007,11.007,0,0,1,3.72-8.23c0.21-.19.43-0.36,0.66-0.53l0.15-.12c0.22-.16.44-0.31,0.67-0.45,0.06-.04.13-0.08,0.19-0.12,0.22-.13.45-0.25,0.68-0.37l0.24-.12c0.22-.1.45-0.2,0.67-0.29,0.1-.04.2-0.07,0.31-0.11,0.21-.08.43-0.15,0.64-0.21,0.14-.04.26-0.08,0.4-0.11,0.2-.05.39-0.1,0.59-0.14,0.18-.03.37-0.05,0.55-0.08,0.15-.02.31-0.05,0.47-0.07,0.35-.03.7-0.05,1.06-0.05a11.007,11.007,0,0,1,11,11C1180.25,4902.93,1173.07,4913.11,1161,4919.1Zm8.25-35.6a1.375,1.375,0,1,0,0,2.75,5.51,5.51,0,0,1,5.5,5.5,1.375,1.375,0,0,0,2.75,0A8.258,8.258,0,0,0,1169.25,4883.5Z" transform="translate(-1139 -4878)"/>
+      </svg>
+      <h1>873</h1>
+      LIKES
+      <div class="line2splash line2_4"></div>
+    </div>
+    <div class="col-auto align-self-center punct5">
+      <svg class="iconsvg5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="44" viewBox="0 0 54 44">
+        <path class="cls-1" d="M1385.31,4918.61h-50.62a1.7,1.7,0,0,0,0,3.39h50.62A1.7,1.7,0,0,0,1385.31,4918.61Zm-23.62-33.84v-3.38h3.37a1.7,1.7,0,0,0,0-3.39h-10.12a1.7,1.7,0,0,0,0,3.39h3.37s-0.01,3.52,0,3.38a27.1,27.1,0,0,0-25.31,27.07v1.7a1.694,1.694,0,0,0,1.69,1.69h50.62a1.694,1.694,0,0,0,1.69-1.69v-1.7A27.1,27.1,0,0,0,1361.69,4884.77Zm-25.31,27.07a23.62,23.62,0,1,1,47.24,0h-47.24Z" transform="translate(-1333 -4878)"/>
+      </svg>
+      <h1>900</h1>
+      WE LAUNCHED
+      <div class="line2splash line2_5"></div>
+    </div>
+  </aside>
+<!-- Flip section -->
+  <section class="sec6">
+    <div class="row justify-content-center nomargin">
+      <div class="col-auto align-self-center sec6text">
+        <h1><b>Recent Posts.</b></h1>
+        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
+        processus dynamicus, qui sequitur mutationem consuetudium.
+      </div>
+    </div>
+    <div class="row justify-content-center nomargin">
+      <!-- Date-block 1  -->
+      <div class="dateblock block1">
+        <div class="dblockbrown">
+          <div class="datahol">
+            <div class="topcal"><h2>30</h2></div>
+            <div class="botcal">Sep.</div>
+          </div>
+        </div>
+        <div class="col-auto align-self-center dblockimg nopadding">
+          <div id="carouselExampleIndicators2" class="slide nopadding widthdblock carousel" data-ride="carousel">
+            <div class="carousel-inner nopadding">
+              <div class="col-auto active carousel-item nopadding">
+                <img src="resources/datephoto1.png" alt="Foto1">
+              </div>
+              <div class="carousel-item nopadding">
+                <img src="resources/datephoto1_1.jpg" alt="Foto2">
+              </div>
+              <div class="carousel-item nopadding">
+                <img src="resources/datephoto1_2.jpg" alt="Foto3">
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-auto align-self-start dblocktext">
+          <h2><b>Lorem ipsum dolor sit amet</b></h2>
+          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.<br><br>
+          <a href="#" class="row justify-content-start nomargin flink">
+            Read More
+            <svg class="align-self-center linkarrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="7" viewBox="0 0 4.969 7.91">
+              <path class="cls-1" d="M460.951,6714.81l3.835-3.46a0.463,0.463,0,0,0,0-.7l-0.021-.01-3.814-3.46a0.6,0.6,0,0,0-.777,0h0a0.484,0.484,0,0,0-.167.36v6.92a0.459,0.459,0,0,0,.173.35h0A0.578,0.578,0,0,0,460.951,6714.81Z" transform="translate(-460 -6707.06)"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Date-block 2  -->
+      <div class="dateblock block2">
+        <div class="dblockbrown">
+          <div class="datahol">
+            <div class="topcal"><h2>30</h2></div>
+            <div class="botcal">Sep.</div>
+          </div>
+        </div>
+        <img src="resources/datephoto2.png" alt="Foto2">
+        <div class="col-auto align-self-start dblocktext">
+          <h2><b>Lorem ipsum dolor sit amet</b></h2>
+          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.<br><br>
+          <a href="#" class="row justify-content-start nomargin flink">
+            Read More
+            <svg class="align-self-center linkarrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="7" viewBox="0 0 4.969 7.91">
+              <path class="cls-1" d="M460.951,6714.81l3.835-3.46a0.463,0.463,0,0,0,0-.7l-0.021-.01-3.814-3.46a0.6,0.6,0,0,0-.777,0h0a0.484,0.484,0,0,0-.167.36v6.92a0.459,0.459,0,0,0,.173.35h0A0.578,0.578,0,0,0,460.951,6714.81Z" transform="translate(-460 -6707.06)"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Date-block 3  -->
+      <div class="dateblock block3">
+        <div class="dblockbrown">
+          <div class="datahol">
+            <div class="topcal"><h2>30</h2></div>
+            <div class="botcal">Sep.</div>
+          </div>
+        </div>
+        <img src="resources/datephoto3.png" alt="Foto 3">
+        <div class="col-auto align-self-start dblocktext">
+          <h2><b>Lorem ipsum dolor sit amet</b></h2>
+          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.<br><br>
+          <a href="#" class="row justify-content-start nomargin flink">
+            Read More
+            <svg class="align-self-center linkarrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="7" viewBox="0 0 4.969 7.91">
+              <path class="cls-1" d="M460.951,6714.81l3.835-3.46a0.463,0.463,0,0,0,0-.7l-0.021-.01-3.814-3.46a0.6,0.6,0,0,0-.777,0h0a0.484,0.484,0,0,0-.167.36v6.92a0.459,0.459,0,0,0,.173.35h0A0.578,0.578,0,0,0,460.951,6714.81Z" transform="translate(-460 -6707.06)"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <aside class="line3">
+    <div class="row justify-content-center">
+      <div class="col-auto align-self-center ">
+        <img class="image-fluid logo2" src="resources/logo-01.png" alt="The Barber">
+      </div>
+      <div class="col-auto align-self-center ">
+        <img class="image-fluid logo2" src="resources/logo-02.png" alt="The Barber">
+      </div>
+      <div class="col-auto align-self-center ">
+        <img class="image-fluid logo2" src="resources/logo-03.png" alt="The Barber">
+      </div>
+      <div class="col-auto align-self-center ">
+        <img class="image-fluid logo2" src="resources/logo-04.png" alt="The Barber">
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <section class="lastsection">
+      <div class="row justify-content-center nomargin">
+        <!-- Block 1 -->
+        <div class="col-auto align-self-start fblock1">
+          <div class="row justify-content-start">
+            <div class="col-auto minilogo">
+              <img src="resources/logos.png" alt="Waxom">
+            </div>
+            <h1 class="align-self-center minilogoh1">Waxom</h1>
+          </div>
+          <div class="textblock">
+          Lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna
+          aliquam erat volutpat. Ut wisi enim ad minim
+          veniam, quis nostrud exerci suscipit lobortis claritatem.
+          </div>
+          <a href="#" class="row justify-content-start nomargin flink">
+            Read More
+            <svg class="align-self-center linkarrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="7" viewBox="0 0 4.969 7.91">
+              <path class="cls-1" d="M460.951,6714.81l3.835-3.46a0.463,0.463,0,0,0,0-.7l-0.021-.01-3.814-3.46a0.6,0.6,0,0,0-.777,0h0a0.484,0.484,0,0,0-.167.36v6.92a0.459,0.459,0,0,0,.173.35h0A0.578,0.578,0,0,0,460.951,6714.81Z" transform="translate(-460 -6707.06)"/>
+            </svg>
+          </a>
+        </div>
+        <!-- Block 2  -->
+        <div class="col-auto align-self-start fblock2">
+          <div class="align-self-start fblock2_1">
+            <h2><b>Recent Posts</b></h2>
+            <span class="textdata">September 08, 2015</span><br>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+          </div>
+          <div class="align-self-start fblock2_2">
+            <span class="textdata">September 08, 2015</span><br>
+            Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+          </div>
+          <div class="align-self-start fblock2_3">
+            <span class="textdata">September 08, 2015</span><br>
+            Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima
+          </div>
+        </div>
+        <!-- Block 3  -->
+        <div class="col-auto align-self-start fblock3">
+          <div class="align-self-start fblock3_1">
+            <h2><b>Our Twitter</b></h2>
+            <span class="texthighlight"><a href="https://twitter.com/Waxom">@waxom</a></span>
+            Cum soluta nobis eleifend option congue nihil imperdiet doming<br>
+            <span class="textdata">3 mins ago</span><br>
+          </div>
+          <div class="align-self-start fblock3_2">
+            Mirum est <span class="texthighlight"><a href="https://twitter.com/hashtag/Envato?src=hashtag_click">#envato</a></span> notare quam littera gothica,
+            quam nunc putamus parum anteposuerit litterarum <br>
+            <span class="textdata">5 hours ago</span><br>
+          </div>
+          <div class="align-self-start fblock3_3">
+            Soluta nobis option <a href="http:\\bit.ly/1Hniso7">bit.ly/1Hniso7</a><br>
+            <span class="textdata">5 hours ago</span><br>
+          </div>
+        </div>
+        <!-- Block 4  -->
+        <div class="col-auto align-self-start fblock4">
+          <h2><b>Dribbble Widget</b></h2>
+          <div class="row nomargin nopadding">
+            <a href="#"><img class="image-fluid widget" src="resources/w1.png" alt="Widget"></a>
+            <a href="#"><img class="image-fluid widget" src="resources/w2.png" alt="Widget"></a>
+            <a href="#"><img class="image-fluid widget" src="resources/w3.png" alt="Widget"></a>
+            <a href="#"><img class="image-fluid widget" src="resources/w4.png" alt="Widget"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer block  -->
+    <div class="row copyright justify-content-between nomargin ">
+      <div class="col-auto copyrightblock">
+        Design by <em>Waxom</em> © 2015 Posted by © 2020 <em>Levon Grigorian</em> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">FAQ </a> |
+        <a href="#">Support</a>
+      </div>
+      <div class="col-auto copyrightblock">
+        Designed by <em>ThemeFire</em>   |   Only on <em>Envato Market</em>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
